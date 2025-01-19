@@ -37,7 +37,7 @@ public class PostfixCalc {
                             break;
                         case "%":
                             tempHold = calculationStack.pop();
-                            calculationStack.push(Math.round(calculationStack.pop() * tempHold));
+                            calculationStack.push(Math.round(calculationStack.pop() / tempHold));
                             break;
                         default:
                             throw e;
